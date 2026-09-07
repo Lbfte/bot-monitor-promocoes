@@ -42,6 +42,9 @@ def build_html(post, cfg) -> str:
         parts.append(f'<a href="{post.url}">Ver no canal original</a>')
     if cfg.footer_text:
         parts.append(cfg.footer_text)
+    store = filters.detect_store(post.text)
+    if store:
+        parts.append(f"#{store}")
     return "\n\n".join(parts)
 
 
