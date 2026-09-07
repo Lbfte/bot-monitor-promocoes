@@ -1,0 +1,17 @@
+# Segredos — NUNCA commitar
+monitor_config.env
+*.env
+!*.env.example
+
+# Sessões do Telethon (não usadas mais, mas por segurança)
+*.session
+*.session-journal
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Backup da config antiga
+*.bak
