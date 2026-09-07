@@ -4,6 +4,7 @@ import hashlib
 import logging
 import re
 import unicodedata
+from urllib.parse import urlparse
 
 log = logging.getLogger("monitor.filters")
 
@@ -11,6 +12,13 @@ URL_RE = re.compile(r"https?://[^\s<>\"']+", re.IGNORECASE)
 # Preços em português: "R$ 61", "R$ 1.234,56", "R$61,90"
 PRICE_RE = re.compile(r"R\$\s*(\d[\d.\s]*(?:,\d{1,2})?)", re.IGNORECASE)
 NON_ALNUM_RE = re.compile(r"[^a-z0-9]+")
+STORE_DOMAINS = {
+    "amazon": ("amazon.com", "amazon.com.br", "amzn.to"),
+    "mercadolivre": ("mercadolivre.com", "mercadolivre.com.br", "meli.la"),
+    "shopee": ("shopee.com", "shopee.com.br", "shope.ee"),
+    "aliexpress": ("aliexpress.com", "s.click.aliexpress"),
+    "magalu": ("magalu.com",),
+}
 
 
 def normalize(text: str) -> str:
@@ -21,6 +29,16 @@ def normalize(text: str) -> str:
 
 def extract_urls(text: str) -> list[str]:
     return URL_RE.findall(text)
+
+
+def detect_store(texto: str) -> str | None:
+    """Devolve a loja identificada pelo domínio de um link no texto."""
+    for url in extract_urls(texto):
+        hostname = (urlparse(url).hostname or "").casefold().rstrip(".")
+        for store, domains in STORE_DOMAINS.items():
+            if any(hostname == domain or hostname.endswith(f".{domain}") for domain in domains):
+                return store
+    return None
 
 
 def extract_price(text: str) -> float | None:
