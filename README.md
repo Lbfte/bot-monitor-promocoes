@@ -268,7 +268,7 @@ legacy/telegram_monitor.py  versão antiga (Telethon + n8n), só referência
   ## Nomes dos desenvolvedores:
 - Albert William Silva Cunha
 - Amanda Albuquerque Silva
-- Filipe José
+- Filipe José Rigonatto Ortiz
 - Laís Bembo de Freitas
   ## Como contribuir
 
