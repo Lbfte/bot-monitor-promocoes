@@ -264,3 +264,9 @@ legacy/telegram_monitor.py  versão antiga (Telethon + n8n), só referência
 - **Links de afiliado são repassados como estão** — a comissão continua sendo do
   dono do canal fonte. Trocar por links seus exigiria reescrever as URLs, o que
   esbarra nas regras de cada programa de afiliados.
+
+  ## Nomes dos desenvolvedores:
+- Albert William Silva Cunha
+- Amanda Albuquerque Silva
+- Filipe José
+- Laís Bembo de Freitas
