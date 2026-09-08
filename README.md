@@ -1,7 +1,8 @@
 # Monitor de Promoções — Telegram → Telegram
 
-Monitora um canal público de promoções do Telegram, reposta tudo no seu
-próprio canal e avisa no privado quem está esperando um produto.
+Bot em Python que acompanha um canal de promoções, republica as ofertas
+no seu canal e envia alertas personalizados por palavra-chave.
+
 Python puro: sem n8n, sem Docker, sem servidor. Roda de graça no GitHub Actions.
 
 ```
