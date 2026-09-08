@@ -2,6 +2,7 @@
 
 Bot em Python que acompanha um canal de promoções, republica as ofertas
 no seu canal e envia alertas personalizados por palavra-chave.
+
 Python puro: sem n8n, sem Docker, sem servidor. Roda de graça no GitHub Actions.
 
 ```

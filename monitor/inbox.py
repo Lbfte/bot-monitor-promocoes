@@ -21,7 +21,8 @@ AJUDA = (
     "/monitorar <i>palavra valor</i> — só avisa até esse preço:\n"
     "     <code>/monitorar notebook 3000</code>\n"
     "/parar <i>palavra</i> — cancela o aviso\n"
-    "/lista — mostra o que você monitora"
+    "/lista — mostra o que você monitora\n"
+    "/status — mostra a última promoção lida e quantas palavras você monitora"
 )
 
 # Aceita "3000", "3.000", "3000,50" ou "R$ 3.000,00".
@@ -55,7 +56,7 @@ def process(publisher, subs, state) -> int:
             continue
 
         chat_id = mensagem["chat"]["id"]
-        resposta = _responder(texto, chat_id, subs)
+        resposta = _responder(texto, chat_id, subs, state)
         publisher.send_to(chat_id, resposta)
         processados += 1
 
@@ -65,7 +66,7 @@ def process(publisher, subs, state) -> int:
     return processados
 
 
-def _responder(texto: str, chat_id: int, subs) -> str:
+def _responder(texto: str, chat_id: int, subs, state) -> str:
     partes = texto.split()
     # "/monitorar@MeuBot" também é válido quando o bot está num grupo.
     comando = partes[0].split("@")[0].casefold()
@@ -73,6 +74,10 @@ def _responder(texto: str, chat_id: int, subs) -> str:
 
     if comando in ("/start", "/ajuda", "/help"):
         return AJUDA
+
+    if comando in ("/status",):
+        qtd = len(subs.list_for(chat_id))
+        return f"Última promoção lida: {state.last_post_id}\nVocê monitora {qtd} palavra(s)."
 
     if comando in ("/monitorar", "/watch"):
         if not args:
