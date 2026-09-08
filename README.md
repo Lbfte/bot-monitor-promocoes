@@ -270,3 +270,8 @@ legacy/telegram_monitor.py  versão antiga (Telethon + n8n), só referência
 - Amanda Albuquerque Silva
 - Filipe José
 - Laís Bembo de Freitas
+  ## Como contribuir
+
+1. Crie uma branch a partir da `main`
+2. Faça suas alterações
+3. Abra um Pull Request descrevendo o que foi feito
