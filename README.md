@@ -1,7 +1,7 @@
 # Monitor de Promoções — Telegram → Telegram
 
-Lê um canal público de promoções, reposta as mensagens no **seu** canal e avisa
-no privado quem pediu para monitorar um produto.
+Monitora um canal público de promoções do Telegram, reposta tudo no seu
+próprio canal e avisa no privado quem está esperando um produto.
 Python puro: sem n8n, sem Docker, sem servidor. Roda de graça no GitHub Actions.
 
 ```
