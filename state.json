@@ -1,8 +1,7 @@
 {
-  "last_post_id": 118269,
+  "last_post_id": 118270,
   "update_offset": 0,
   "seen": [
-    "bee7be8213374d66",
     "918affa8c1bfdac5",
     "c3409b623624ecba",
     "940d9ecd4ce7c9ce",
@@ -501,7 +500,8 @@
     "4a9d2ea74d3ba94a",
     "00d7b16d68d11606",
     "ad26cfd19b36d214",
-    "7003ca608fe09a63"
+    "7003ca608fe09a63",
+    "0161cc17bda6fa50"
   ],
-  "updated_at": "2026-09-27T16:57:05+00:00"
+  "updated_at": "2026-09-27T19:57:35+00:00"
 }
