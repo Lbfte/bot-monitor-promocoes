@@ -1,9 +1,7 @@
 {
-  "last_post_id": 123066,
+  "last_post_id": 123068,
   "update_offset": 0,
   "seen": [
-    "b57f0fd44044ccdc",
-    "fc8f7ae841fe263f",
     "fc9fa68b28c104a2",
     "1c1e8f4d9aac21a8",
     "1ed274da847a2dfe",
@@ -501,7 +499,9 @@
     "ce3c3372e1327d47",
     "66422a006d3a7ea9",
     "d83a38d90c98b7bb",
-    "a2bc6b8158a4c8e1"
+    "a2bc6b8158a4c8e1",
+    "14b61ea946b25112",
+    "4a344b7d7bc3c699"
   ],
-  "updated_at": "2026-10-24T21:58:05+00:00"
+  "updated_at": "2026-10-25T00:01:52+00:00"
 }
