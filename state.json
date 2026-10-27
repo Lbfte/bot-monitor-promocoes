@@ -1,17 +1,7 @@
 {
-  "last_post_id": 123245,
+  "last_post_id": 123358,
   "update_offset": 0,
   "seen": [
-    "d260bf12f28e8453",
-    "b5b8fe64efde0e1c",
-    "84997671c6461097",
-    "106826552cdb9f05",
-    "c82bcc36649dadb9",
-    "3defe242571728cb",
-    "c4234c972ff7a7c9",
-    "8e5ffa6fde1ad7f7",
-    "6df294ccfffe27ae",
-    "f97bf8537cb904e4",
     "d018283ba19eaa89",
     "38101171a9fa1520",
     "940cbb8d0db72a2e",
@@ -501,7 +491,17 @@
     "dce24b73677d135f",
     "34ce7a17287414c8",
     "c50f7b12bcf3a352",
-    "ec3c27c2e1c00182"
+    "ec3c27c2e1c00182",
+    "6f7785594c0f3a18",
+    "286021bbfb60119a",
+    "7782570c2a0d6306",
+    "6e78ff098ce6311a",
+    "0109dcba91220d14",
+    "112bcf5f288e66b2",
+    "abd7bd071f0170fb",
+    "8deb357d2dbcc741",
+    "30a1f263c971dd19",
+    "f9e6bd4b7f400682"
   ],
-  "updated_at": "2026-10-27T10:52:34+00:00"
+  "updated_at": "2026-10-27T16:05:07+00:00"
 }
